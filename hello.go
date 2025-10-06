@@ -5,11 +5,11 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
-Using PowerShell for command execution.
+# Using PowerShell for command execution.
 # Test if the program compiles and runs correctly:
 go run hello.go
 # Expected output:
-Hello, World!
+# Hello, World!
 # Validation against acceptance criteria:
 # - File named 'hello.go' exists: yes
 # - Contains a minimal valid Go program: yes
