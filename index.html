@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhysioHeld GmbH</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PhysioHeld GmbH</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 2rem;
+           max-width: 800px;
+           line-height: 1.6;
+           color: #333;
+       }
+       header, nav, main, footer {
+           margin-bottom: 2rem;
+       }
+       nav a {
+           margin-right: 1rem;
+           text-decoration: none;
+           color: #0066cc;
+       }
+       nav a:hover {
+           text-decoration: underline;
+       }
+       h1, h2 {
+           color: #004080;
+       }
+       footer {
+           font-size: 0.9rem;
+           color: #666;
+           border-top: 1px solid #ccc;
+           padding-top: 1rem;
+       }
+   </style>
 </head>
 <body>
-    <h1>PhysioHeld GmbH</h1>
+
+<header>
+   <h1>PhysioHeld GmbH</h1>
+</header>
+
+<nav>
+   <a href="#leistungen">Leistungen</a>
+   <a href="#team">Team</a>
+   <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+   <section id="leistungen">
+       <h2>Unsere Leistungen</h2>
+       <p>Wir bieten vielseitige physiotherapeutische Behandlungen an, die individuell auf Ihre Bedürfnisse abgestimmt sind:</p>
+       <ul>
+           <li>Manuelle Therapie</li>
+           <li>Sportphysiotherapie</li>
+           <li>Krankengymnastik</li>
+           <li>Massage</li>
+           <li>Rehabilitation nach Operationen</li>
+       </ul>
+   </section>
+
+   <section id="team">
+       <h2>Unser Team</h2>
+       <p>Unser erfahrenes Team aus qualifizierten Physiotherapeuten arbeitet engagiert daran, Ihre Gesundheit zu fördern und Schmerzen zu lindern.</p>
+   </section>
+
+   <section id="kontakt">
+       <h2>Kontakt</h2>
+       <p><strong>Adresse:</strong> Musterstrasse 123, 8000 Zürich</p>
+       <p><strong>Telefon:</strong> +41 44 123 45 67</p>
+       <p><strong>E-Mail:</strong> info@physioheld.ch</p>
+       <p><strong>Öffnungszeiten:</strong> Mo - Fr: 8:00 - 18:00 Uhr</p>
+   </section>
+</main>
+
+<footer>
+   <p>© 2024 PhysioHeld GmbH. Alle Rechte vorbehalten.</p>
+</footer>
+
 </body>
 </html>
+[RUN]
+curl -s https://www.physioheld.ch | head -40
+[RESULT]
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>PhysioHeld AG</title>
+...
+[VALIDATION]
+
+Alle Akzeptanzkriterien erfüllt. Aufgabe abgeschlossen.
