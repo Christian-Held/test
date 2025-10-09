@@ -1,9 +1,10 @@
 public class lo {
     public static void main(String[] args) {
-        // main method placeholder
+        System.out.println("Hello, World!");
     }
 }
-[Run commands]
-echo 'public class lo { public static void main(String[] args) { } }' > lo.java
+# Execute build and run commands as specified:
 javac lo.java
-[Validation]
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+java lo
+# Expected output: Hello, World!
